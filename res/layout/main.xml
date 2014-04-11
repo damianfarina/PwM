@@ -14,7 +14,8 @@
         android:id="@+id/targetText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:width="250px" />
+        android:width="250px"
+        android:inputType="textNoSuggestions" />
 
     <Button
         android:id="@+id/generateButton"

@@ -19,7 +19,7 @@ import android.widget.EditText;
  *
  * @author damian
  */
-public class MainActivity extends Activity {
+public class PwMaker extends Activity {
 
     private EditText targetText;
     private Button generateButton;
@@ -59,8 +59,8 @@ public class MainActivity extends Activity {
     }
 
     private void onGenerateClick() {
-    	pwd1.setText(getMD5(targetText.getText().toString() + "<MASTER_PASSWORD_ONE>").substring(0, 8));
-        pwd2.setText(getMD5(targetText.getText().toString() + "<MASTER_PASSWORD_TWO>").substring(0, 8));
+    	pwd1.setText(getMD5(targetText.getText().toString().trim() + "_oshovu").substring(0, 8));
+        pwd2.setText(getMD5(targetText.getText().toString().trim() + "_dream").substring(0, 8));
     }
 
     private String getMD5(String s) {
