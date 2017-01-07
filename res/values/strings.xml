@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="target">Type your target</string>
-    <string name="app_name">PWMaker</string>
-<string name="newPassword">Here is your password</string>
-<string name="generate">Generate</string>
-</resources>
