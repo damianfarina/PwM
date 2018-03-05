@@ -58,9 +58,10 @@ public class PasswordFormActivity extends AppCompatActivity {
     private void onGenerateButtonClick() {
         List<String> passwordsList = new ArrayList<>();
 
-        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + _MASTER_PASS_1_).substring(0, 8));
-        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + _MASTER_PASS_2_).substring(0, 8));
-        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + _MASTER_PASS_3_).substring(0, 8));
+        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + "_MASTER1").substring(0, 8));
+        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + "_MASTER2").substring(0, 8));
+        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + "_MASTER3").substring(0, 8));
+        passwordsList.add(getMD5(keywordInput.getText().toString().trim() + "_MASTER4").substring(0, 10));
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
                 this,
